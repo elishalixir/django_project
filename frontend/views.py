@@ -17,16 +17,19 @@ def team(request):
     team1.name = 'Charles Kanu Ikeah'
     team1.job_title = 'Director'
     team1.description = 'Department of Pollution Control and Environmental Health'
+    team1.img = 'team-1.jpg'
 
     team2 = management()
     team2.name = 'Sharon Ikeazor'
     team2.job_title = 'Minister Of Environment'
     team2.description = 'Federal Ministry of Environment'
+    team2.img = 'team-2.jpg'
 
     team3 = management()
     team3.name = 'Hassan Musa'
     team3.job_title = 'Permanent Secretary'
     team3.description = 'Federal Ministry of Environment'
+    team3.img = 'team-3.jpg'
     teams = [team1, team2, team3]
 
     return render(request, 'frontend/team.html', {'title': 'Team', 'teams': teams})

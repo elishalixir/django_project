@@ -1,6 +1,7 @@
 {% extends "frontend/base.html"%}
 {% load static %}
 
+
 {% block content %}
 
     <!-- ======= Team Section ======= -->
@@ -11,7 +12,7 @@
           {% for teams in teams %}
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="{% static 'assets/img/team/team-1.jpg'%} " alt="">
+              <img src="{% static 'assets/img/team' %}/{{teams.img}}" alt="">
               <h4>{{teams.name}}</h4>
               <span>{{teams.job_title}}</span>
               <p>

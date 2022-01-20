@@ -21,6 +21,6 @@ class management:
     name = str
     job_title = str
     description = str
-    img = str
+
 
 
