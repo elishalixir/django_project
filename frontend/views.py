@@ -7,10 +7,8 @@ from .models import management
 def home(request):
     return render(request, 'frontend/home.html', {'title': 'Home'})
 
-
 def about(request):
-    return render(request, 'frontend/about.html', {'title': 'About'})
-
+    return render(request, 'frontend/about.html', {'title': 'about'})
 
 def team(request):
     team1 = management()
