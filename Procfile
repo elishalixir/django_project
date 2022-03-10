@@ -1,0 +1,1 @@
+web gunicorn mercurymis.wsgi:application --log-file -
