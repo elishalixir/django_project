@@ -36,6 +36,11 @@ def team(request):
 def contact(request):
     return render(request, 'frontend/contact.html', {'title': 'Contact'})
 
+def forms(request):
+    return render(request, 'frontend/forms.html', {'title': 'forms'})
+
+def mmis(request):
+    return render(request, 'frontend/mmis.html', {'title': 'mmis'})
 
 def testpage(request):
     return HttpResponse('Test PAGE')
